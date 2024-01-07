@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saranghayyo PureHeart - Halls</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <header>
+        <h1>Saranghayyo PureHeart</h1>
+      </header>
+      <ul class="navbar">
+        <li><a href="index.html" data-hover="Home">Home</a></li>
+        <li class="current"><a href="#" data-hover="Halls">Halls</a></li>
+        <li>
+          <a href="campaigns.html" data-hover="Fundraising Campaigns"
+            >Fundraising Campaigns</a
+          >
+        </li>
+        <li>
+          <a href="contact.html" data-hover="Contact Information"
+            >Contact Information</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="info">
+      <h2>Halls and Booking</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem porro,
+        quod sed tempora, molestias doloribus, maxime tempore rerum odio debitis
+        saepe dolor recusandae delectus quia! Laudantium nesciunt ipsa veritatis
+        tenetur!
+      </p>
+      <section id="halls">
+        <!-- <h2>Our Multi-Purpose Halls</h2> -->
+        <div class="hall-item">
+          <h3>Hall A: Harmony Hall</h3>
+          <img src="imgs/1.jpg" alt="Harmony Hall Image" />
+          <p>
+            Harmony Hall is our largest venue, accommodating up to 200 guests.
+            It is equipped with state-of-the-art audiovisual facilities and is
+            suitable for weddings, conferences, and large-scale events.
+          </p>
+          <p>
+            Availability: Check our calendar for upcoming dates and book your
+            event now!
+          </p>
+        </div>
+
+        <div class="hall-item">
+          <h3>Hall B: Serenity Room</h3>
+          <img src="imgs/2.jpg" alt="Serenity Room Image" />
+          <p>
+            Serenity Room provides a cozy and intimate setting, ideal for small
+            workshops and team-building sessions. It can accommodate up to 50
+            people.
+          </p>
+          <p>
+            Availability: Limited slots available. Reserve your date in advance.
+          </p>
+        </div>
+
+        <div class="hall-item">
+          <h3>Hall C: Unity Space</h3>
+          <img src="imgs/3.jpg" alt="Unity Space Image" />
+          <p>
+            Unity Space offers a flexible layout, making it perfect for art
+            exhibitions, dance classes, and community events. Capacity varies
+            based on the setup.
+          </p>
+          <p>
+            Availability: Contact us to inquire about the schedule and secure
+            your spot.
+          </p>
+        </div>
+
+        <div class="hall-item">
+          <h3>Hall D: Peace Space</h3>
+          <img src="imgs/4.jpg" alt="Unity Space Image" />
+          <p>
+            Peace Space offers a flexible layout, making it perfect for art
+            exhibitions, dance classes, and community events. Capacity varies
+            based on the setup.
+          </p>
+          <p>
+            Availability: Contact us to inquire about the schedule and secure
+            your spot.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="booking">
+        <h2>Book a Hall</h2>
+      <form action="reservation.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="visitor_name"
+            placeholder="Kwame Bonsu"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="visitor_email"
+            placeholder="kwame.bonsu@email.com"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="visitor_phone"
+            placeholder="0244696969"
+            required
+          />
+        </div>
+        <hr />
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input
+            type="number"
+            id="adult"
+            name="total_adults"
+            placeholder="2"
+            min="1"
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input
+            type="number"
+            id="child"
+            name="total_children"
+            placeholder="2"
+            min="0"
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required />
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required />
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Room Number</label>
+          <select id="room-selection" name="room_preference" required>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+          </select>
+        </div>
+        <hr />
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea
+            id="message"
+            name="visitor_message"
+            placeholder="Tell us anything else that might be important."
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Book The Rooms</button>
+      </form>
+    </div>
+  </body>
+</html>
